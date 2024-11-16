@@ -3,15 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>HBD</title>
 
     <!-- Tailwind -->
      <link rel="stylesheet" href="output.css">
 
+     <!-- Animated -->
+     <link
+     rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
 </head>
-<body>
+<body class="bg-[url('image/bg.jpg')] w-full bg-no-repeat bg-cover flex justify-center h-screen items-center ">
+
+    <div class="bg-white px-10 py-8 border-4 border-gray-300 shadow-blue-300 rounded-xl text-center shadow-lg animate__animated animate__backInDown w-80" id="kartu">
+        <h1 class="text-3xl">Happy Birthday</h1>
+        <h1 class="text-4xl text-orange-400 font-bold animate__animated animate__pulse animate__infinite">Bang Abim</h1>
+        <button class="p-2 bg-orange-500 text-white rounded mt-5 hover:bg-orange-600 transition ease-in w-full font-semibold animate__animated animate__delay-1s animate__tada" onclick="ubahKartu()">Klik Disini</button>
+    </div>
 
     
+    
+    <!-- animate -->
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+    <script>
+        confetti({
+            particleCount: 100,
+            spread: 70,
+            origin: { y: 0.6 },
+        });
+        </script>
+
+    <script src="main.js"></script>
     
 </body>
 </html>
